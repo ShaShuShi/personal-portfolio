@@ -1,0 +1,367 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects - Shantanu Chaudhuri</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/site.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <script src="https://kit.fontawesome.com/2fb0e8abe9.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="./index.html">Hello!</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="./index.html">About Me</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="./projects.html">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="./experiences.html">Experience</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    </body>
+<body>
+    <header>
+        <div class="d-flex justify-content-center">
+            <h1><strong>Projects</strong></h1>
+        </div>
+        <div class="d-flex justify-content-center">
+            <h4>Explore My Work</h4>
+        </div>
+    </header>
+
+    <main>
+        <section id="projects" class="projects-container">
+            <h2>Highlighted Projects</h2>
+            <div class="projects-grid">
+
+                <!-- Get Ready! -->
+                <div class="project-card" id="GetReady" onclick="expandProject(this)">
+                    <h3>Get Ready!</h3>
+                    <p><strong>Tools Used:</strong> React, Flask, Python, SQL, OpenAI API</p>
+                    <p><strong>Description:</strong> An OpenAI-powered web app that provides personalized outfit recommendations based on weather and a user’s virtual closet.</p>
+                    <p><strong>Impact:</strong> Potential user base of over 1 million, saving individuals 90+ hours annually.</p>
+                    <div class="project-details">
+                        <h4>Steps:</h4>
+                        <ul>
+                            <li>Integrated open source weather API and RESTful OpenAI API</li>
+                            <li>Developed virtual closet using SQL for data storage.</li>
+                            <li>Created frontend using React to display output from OpenAI API along with take in input safely for closet updates and send http requests between backend via Flask</li>
+                        </ul>
+                        <h4>Challenges:</h4>
+                        <p>
+                            One of the biggest hurdles was to address security with my API keys. To resolve this, I use System variables. There also lots of debugging in getting 
+                            frontend to interact properly with backend. 
+                        </p>
+                        <h4>Learning Outcome:</h4>
+                        <p>
+                            I gained a deep understanding of integrating APIs securely and efficiently. Debugging frontend-backend communication gave me confidence in building scalable web applications.
+                            Working with OpenAI API and solving real-world challenges taught me to think critically about user experience and data handling.
+                        </p>
+                        <div class="image-row">
+                            <img src="/Assets/get-ready.png" alt="Get Ready App" class="project-image">
+                            <img src="/Assets/get-ready1.png" alt="Get Ready App" class="project-image">
+                        </div>
+                        <video controls class="project-video">
+                            <source src="Assets/get-ready-demo.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+
+                <!-- Portfolio Website -->
+                <div class="project-card" id="PortfolioWebsite" onclick="expandProject(this)">
+                    <h3>Portfolio Website (This website!)</h3>
+                    <p><strong>Tools Used:</strong>ASP.NET, C#, HTML, CSS, JavaScript</p>
+                    <p><strong>Description:</strong>This website is a professional yet fun, portfolio about my experiences and projects. It integrates many modern reactive UI components and includes many experiences that I have that simply don't make the cut for my resume. Hope you enjoy!'</p>
+                    <p><strong>Impact:</strong>Allows me to showcase my .NET development, in particular my frontend development. Also gives me an easy place to store my experiences and projects that don't fit on the resume.</p>
+                    <div class="project-details">
+                        <h4>Steps:</h4>
+                        <ul>
+                            <li>Plan out site components and design with html.</li>
+                            <li>Apply stying and reactive components through css and javascript</li>
+                            <li>Ensure all components are functional in Model-View-Controller layout are functional</li>
+                        </ul>
+                        <h4>Challenges:</h4>
+                        <p>
+                            This took time to get together and I came across challenges when it came to reactive components I wanted to add. For 
+                            example, the timeline tiles fading in and the experienc and project tiles expanding on click were things I wanted to add, but 
+                            did not know how. I was able to use online documentation to learn how to apply those features. 
+                        </p>
+                        <h4>Learning Outcome:</h4>
+                        <p>
+                            This project strengthened my skills in creating interactive user interfaces and working with MVC architecture. I learned how to implement dynamic components like expanding tiles
+                            and animations, making the site more engaging. It also improved my ability to use documentation and online resources to solve problems creatively.
+                        </p>
+                        <img src="Assets/oracle-dashboard.png" alt="Pictures of this Site" class="project-image">
+                    </div>
+                </div>
+
+                <!-- Tool Management System -->
+                <div class="project-card" id="ToolManagement" onclick="expandProject(this)">
+                    <h3>Tool Management System</h3>
+                    <p><strong>Tools Used:</strong> ASP.NET, SQL, C#, HTML, CSS, Javascript</p>
+                    <p><strong>Description:</strong> A system designed to streamline tool allocation and inventory management across warehouses.</p>
+                    <p><strong>Impact:</strong> Improved workflow efficiency by 20% and reduced tool loss incidents.</p>
+                    <div class="project-details">
+                        <h4>Steps:</h4>
+                        <ul>
+                            <li>Developed a backend with SQL Server for data consistency.</li>
+                            <li>Built a user-friendly front-end using ASP.NET Framework.</li>
+                            <li>Reviewed any required updates based on UAT</li>
+                        </ul>
+                        <h4>Challenges:</h4>
+                        <p>
+                            This project was near the beginning of my very first Software internship, and as such, I took advantage of 
+                            the mentorship that was available to me. There was a learning curve for me in .NET technologies, but my mentor did 
+                            phenomenal job in getting me up to speed in just 2-weeks! Other challenges I faced were with various bugs in the code 
+                            that I reviewed with my mentor to locate.
+                        </p>
+                        <h4>Learning Outcome:</h4>
+                        <p>
+                            This experience helped me develop foundational skills in .NET technologies and SQL databases. It also taught me the importance of seeking mentorship, which accelerated my
+                            learning curve. Debugging and resolving bugs improved my attention to detail and problem-solving abilities.
+                        </p>
+                        <img src="Assets/tool-management.png" alt="Tool Management System" class="project-image">
+                    </div>
+                </div>
+
+                <!-- Vendor Pricing Tool -->
+                <div class="project-card" id="VendorPricing" onclick="expandProject(this)">
+                    <h3>Vendor Pricing Tool</h3>
+                    <p><strong>Tools Used:</strong> ASP.NET, SQL, C#, HTML, CSS, Javascript</p>
+                    <p><strong>Description:</strong> This desktop application quickly updated pricing changes in the ERP based on percentage value or via excel upload.</p>
+                    <p><strong>Impact:</strong> Decreased data entry errors by 30% and enhanced pricing accuracy.</p>
+                    <div class="project-details">
+                        <h4>Steps:</h4>
+                        <ul>
+                            <li>Developed desktop UI using UI tools available in Visual Studio.</li>
+                            <li>Connected UI elements to backend along with connecting the appropriate SQL DataBase.</li>
+                            <li>Included options for user to update pricing to ERP via standard percentage or an excel file upload</li>
+                        </ul>
+                        <h4>Challenges:</h4>
+                        <p>
+                               The most significant challenge for this portion was understanding the needs of the finance team and how to best 
+                               implement that in the software. Besides that, there were bugs, many of which I was able to resolve on my own, 
+                               few that I needed support from my mentor on. 
+                        </p>
+                        <h4>Learning Outcome:</h4>
+                        <p>
+                            I learned how to effectively gather user requirements and translate them into technical solutions. Building this tool helped me refine my skills in creating intuitive UIs
+                            and integrating backend systems. It also gave me confidence in troubleshooting complex bugs independently and collaboratively.
+                        </p>
+                        <img src="Assets/vendor-pricing.png" alt="Vendor Pricing Tool" class="project-image">
+                    </div>
+                </div>
+
+                <!-- Oracle ERP Consolidated Dashboard -->
+                <div class="project-card" id="ConsolidatedDash" onclick="expandProject(this)">
+                    <h3>Oracle ERP Consolidated Dashboard</h3>
+                    <p><strong>Tools Used:</strong> Power BI</p>
+                    <p><strong>Description:</strong> Created dashboards consolidating PMO data for faster decision-making.</p>
+                    <p><strong>Impact:</strong> Enhanced visibility into project progress and improved reporting speed.</p>
+                    <div class="project-details">
+                        <h4>Steps:</h4>
+                        <ul>
+                            <li>Connected and normalized Oracle ERP Transformation data to Power BI for real-time insights.</li>
+                            <li>Designed custom visualizations for team-specific KPIs.</li>
+                            <li>Automated data refresh schedules to ensure up-to-date reports.</li>
+                        </ul>
+                        <h4>Challenges:</h4>
+                        <p>
+                                This project was what elevated by beginner Power BI acumen to intermediate. There were several technical challenges and learning 
+                                hurdles I needed to overcome along the process.  I met with a professional to discuss my project and view some of their work. I also learned 
+                                from many online resources on best practices and helpful tips and tricks for design and layout. Normalizing and transforming the data was definitely 
+                                a challenge as at times normalization could lead to a loss of information, so many disucssions were had on what approach might be most beneficial.
+                        </p>
+                        <h4>Learning Outcome:</h4>
+                        <p>
+                            This project significantly enhanced my Power BI skills, particularly in data transformation and visualization. I learned to collaborate effectively with stakeholders to
+                            balance technical constraints with business needs. It also taught me how to normalize and structure data for meaningful insights.
+                        </p>
+                        <img src="Assets/oracle-dashboard.png" alt="Oracle ERP Consolidated Dashboard" class="project-image">
+                    </div>
+                </div>
+
+                <!-- PC Refresh -->
+                <div class="project-card" id="PCRefresh" onclick="expandProject(this)">
+                    <h3>PC Refresh Automation</h3>
+                    <p><strong>Tools Used:</strong>Power Automate, ServiceNow</p>
+                    <p><strong>Description:</strong> Created an Automation that integrates with a service technician's MS suite to quickly resolve PC Refresh tickets created in ServiceNow</p>
+                    <p>
+                        <strong>Impact:</strong>PC Automations were backed up due to Covid; however, by implementing an automation, speed and success rate of refreshes were increased by nearly 50%.
+                        
+                    </p>
+                    <div class="project-details">
+                        <h4>Steps:</h4>
+                        <ul>
+                            <li>Cleveryly integrate ServiceNow and MS tools with Power Automate as well as create an asset tracking system in SharePoint</li>
+                            <li>Design custom automation to send instant and time-based conditionaly communications to PC Refresh users</li>
+                            <li>Run through UAT, ensuring all bugs are resolved and technicians are aware of functionality and use</li>
+                        </ul>
+                        <h4>Challenges:</h4>
+                        <p>
+                            The biggest challenge for this was learning the refresh process and then simultaneously learning a brand new tool - Power Automate. 
+                            Although this learning curve added some delays, it ultimately helped me learn advanced Power Automate techniques which would speed up my work for later projects.
+                        </p>
+                        <h4>Learning Outcome:</h4>
+                        <p>
+                            I developed strong skills in Power Automate and learned how to create scalable automations. Understanding the PC refresh process gave me insight into IT workflows,
+                            and learning a new tool on the fly taught me how to adapt quickly in a professional environment.
+                        </p>
+                        <img src="Assets/oracle-dashboard.png" alt="PC Refresh" class="project-image">
+                    </div>
+                </div>
+
+                <!-- PC Pickup Automation -->
+                <div class="project-card" id="PCPickup" onclick="expandProject(this)">
+                    <h3>PC Pickup Automation</h3>
+                    <p><strong>Tools Used:</strong>Power Automate, ServiceNow</p>
+                    <p><strong>Description:</strong> Created an Automation that integrates with a service technician's MS suite to quickly resolve PC Pickup tickets created in ServiceNow</p>
+                    <p><strong>Impact:</strong>PC Pickups were backed up due to Covid; however, by implementing an automation, speed and success rate of pickups were increased by nearly 50%. 
+                        In addition, labor allocated towards PC Pickups were reduced by 98%</p>
+                    <div class="project-details">
+                        <h4>Steps:</h4>
+                        <ul>
+                            <li>Cleveryly integrate ServiceNow and Technician's MS tools with Power Automate</li>
+                            <li>Design custom automation to send instant and time-based conditionaly communications to PC Pickup users</li>
+                            <li>Run through UAT, ensuring all bugs are resolved and technicians are aware of functionality and use</li>
+                        </ul>
+                        <h4>Challenges:</h4>
+                        <p>
+                            Unfortunately, I did not have the connector to ServiceNow, so I needed to be clever about how I recognized PC Pickup tickets. 
+                            This workaround added extra moving parts which created some ineffeciencies, but ultimately it still achieved the desired 
+                            functionality. Another challenge was to address all the niche conditions that could occur with a PC Pickup ticket.  Although most 
+                            of these were addressed in the initial deployment, a few of them were revealed during UAT and were promptly resolved. 
+                        </p>
+                        <h4>Learning Outcome:</h4>
+                        <p>
+                            This project taught me to think creatively when faced with technical limitations, such as not having direct ServiceNow connectors. I learned how to handle edge cases
+                            in automation workflows and gained a better understanding of how to manage user expectations through thorough testing and iterative improvements.
+                        </p>
+                        <img src="Assets/oracle-dashboard.png" alt="PC Pickup" class="project-image">
+                    </div>
+                </div>
+
+                <!-- Timesheet Report Dashboard -->
+                <div class="project-card" id="TimesheetDash" onclick="expandProject(this)">
+                    <h3>Timesheet Report Dashboard</h3>
+                    <p><strong>Tools Used:</strong> Power BI, Daptiv Reporting</p>
+                    <p><strong>Description:</strong>Engineered a dashboard that gives insight in the resource costs over a 90 day period, which updates quickly. </p>
+                    <p><strong>Impact:</strong>Turned a 5 hour process of developing a new excel report each week into a 5 minute process through Power BI, thus saving 98% of the time 
+                        for this process. Allows for PMO leadership to quickly understand how costs are allocated to business resources and locate points of concern.</p>
+                    <div class="project-details">
+                        <h4>Steps:</h4>
+                        <ul>
+                            <li>Reassesed an existing process and improved it by using Power BI reporting</li>
+                            <li>Designed friendly visualization in excel to simply very nuanced data.</li>
+                            <li>Refresh data bi-weekly and report out with just a single button click</li>
+                        </ul>
+                        <h4>Challenges:</h4>
+                        <p>
+                            Before beginning this project, I finished the Consolidated Dashboard project which gave an opportunity to really hone my Power BI accumen. 
+                            Still, I ran into some brand new challenges I had not encountered previously on the tool, which took some time to resolve and ultimately taught me new things about the tool.
+                            A lot of the data also needed to be normalized, which at times causes information to get lost. This added time to the planning stage which added delays.
+                        </p>
+                        <h4>Learning Outcome:</h4>
+                        <p>
+                            This project deepened my understanding of Power BI and showed me the importance of improving existing processes. I learned how to manage large datasets, normalize them
+                            effectively, and create intuitive visualizations that convey complex information clearly to stakeholders.
+                        </p>
+                        <img src="Assets/oracle-dashboard.png" alt="Timesheet Dashboard" class="project-image">
+                    </div>
+                </div>
+
+                <!-- Business Process ERP System Deployment -->
+                <div class="project-card" id="SysDeployment" onclick="expandProject(this)">
+                    <h3>Business Process Deployment Analysis</h3>
+                    <p><strong>Tools Used:</strong>Microsoft Excel, Jira, Confluence</p>
+                    <p><strong>Description:</strong> Created a visual excel report and a one pager on current deployment status of business process functionalities in Oracle Fusion ERP.</p>
+                    <p><strong>Impact:</strong> Increased project progress visibility and quickly assessed what future deployment needs are.</p>
+                    <div class="project-details">
+                        <h4>Steps:</h4>
+                        <ul>
+                            <li>Reviewed 1300 Jira Change Requests to understand business needs.</li>
+                            <li>Designed friendly visualization in excel to simply very nuanced data.</li>
+                            <li>Created final report to share out with senior leadership on project progress.</li>
+                        </ul>
+                        <h4>Challenges:</h4>
+                        <p>
+                            It took time and understanding to be able to fine tune the visuals in the excel report and also the 
+                            final report to senior leadership. In addition, understanding the data and fields in Jira to be able 
+                            to create the appropriate filters was challenging since the fields were not the most intuitive. Another challenge was that 
+                            to confirm certain intuitions, I needed to meet with busy process owners, which added significant delays.
+                        </p>
+                        <h4>Learning Outcome:</h4>
+                        <p>
+                            I honed my data analysis skills and learned how to create impactful visuals in Excel for senior leadership. Navigating Jira data fields taught me how to extract
+                            meaningful information from complex systems. This experience also improved my ability to communicate insights effectively to a non-technical audience.
+                        </p>
+                        <img src="Assets/oracle-dashboard.png" alt="Business Process Deployment Analysis" class="project-image">
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const hash = window.location.hash.substring(1); // Get hash without the #
+            if (hash) {
+                const targetCard = document.getElementById(hash);
+                if (targetCard) {
+                    expandProject(targetCard); // Expand the targeted card
+                    targetCard.scrollIntoView({ behavior: "smooth", block: "start" });
+                }
+            }
+        });
+
+        function expandProject(card) {
+            const expandedClass = 'expanded';
+            const alreadyExpanded = card.classList.contains(expandedClass);
+
+            // Collapse all other expanded cards
+            document.querySelectorAll('.project-card.expanded').forEach(expandedCard => {
+                expandedCard.classList.remove(expandedClass);
+            });
+
+            // Toggle current card's expansion
+            if (!alreadyExpanded) {
+                card.classList.add(expandedClass);
+            }
+        }
+
+    </script>
+
+<footer class="border-top footer text-muted">
+    <div class="container">
+        &copy; 2024 - Shantanu Chaudhuri - <a href="./privacy.html">Privacy</a>
+    </div>
+</footer>
+<script src="./js/jquery.min.js"></script>
+<script src="./js/bootstrap.bundle.min.js"></script>
+<script src="./js/site.js"></script>
+</body>
+
+</html>
